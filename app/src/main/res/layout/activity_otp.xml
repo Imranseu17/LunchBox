@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.OTPActivity">
+
+    <LinearLayout
+        android:id="@+id/top_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/reset_pass_background">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/explores_wo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="120dp"
+            android:textColor="@color/white"
+            android:text="Verify Phone"
+            android:textAppearance="@style/explores_wo"
+            android:gravity="top"
+            android:layout_marginLeft="120dp" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+
+    <LinearLayout
+        android:id="@+id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_below="@id/top_shape">
+
+        <TextView
+            android:id="@+id/please_ente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/calibri"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/phone_verif"
+            android:textAppearance="@style/phone_verif"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="-1.8sp" />
+
+        <TextView
+            android:id="@+id/phone_numbe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/please_ente"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/calibri"
+            android:text="@string/enter_your_"
+            android:textAppearance="@style/enter_your_"
+            android:lineSpacingExtra="0sp"
+            android:gravity="top"
+            />
+
+
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_numbe"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            app:bar_enabled="true"
+            app:bar_height="2dp"
+            app:height="40dp"
+            app:length="6"
+            app:otp_text_size="24dp"
+            app:width="40dp" />
+
+        <TextView
+            android:id="@+id/didn_t_you_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="170dp"
+            android:text="@string/didn_t_you_"
+            android:textAppearance="@style/didn_t_you_"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resent_new_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6342E8"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/didn_t_you_"
+            android:layout_marginTop="5dp"
+            android:text="@string/resent_new_"
+            android:textAppearance="@style/resent_new_"
+            android:gravity="top"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/forgotpassbuttonshape"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/calibri"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

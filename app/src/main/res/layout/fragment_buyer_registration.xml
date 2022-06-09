@@ -1,0 +1,321 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/edit_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/namellabelled"
+            android:layout_width="324dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:text="Name *"
+            android:textColor="#E74C3C"
+            android:textSize="20sp"
+            android:textAppearance="@style/labelled"
+            android:lineSpacingExtra="7sp"
+            android:translationY="-3.5sp"
+            android:gravity="top"
+            />
+
+
+
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:drawableRight="@null"
+                android:paddingRight="20dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/mainText"
+                android:drawableStart="@drawable/ic_baseline_account_box_24"
+                android:background="@drawable/phone_edit_shape"
+                android:fontFamily="@font/calibri"
+                android:textAppearance="@style/some_id"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                android:gravity="center_horizontal" />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_layout_name"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/emailllabelled"
+            android:layout_width="324dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:text="Email *"
+            android:textColor="#E74C3C"
+            android:textSize="20sp"
+            android:textAppearance="@style/labelled"
+            android:lineSpacingExtra="7sp"
+            android:translationY="-3.5sp"
+            android:gravity="top"
+            />
+
+
+
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:drawableRight="@null"
+                android:paddingRight="20dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/mainText"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:background="@drawable/phone_edit_shape"
+                android:fontFamily="@font/calibri"
+                android:textAppearance="@style/some_id"
+                android:textAlignment="center"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:gravity="center_horizontal" />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_layout_occupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_layout_email"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/occupationllabelled"
+            android:layout_width="324dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:textColor="#E74C3C"
+            android:layout_alignParentTop="true"
+            android:text="Occupation *"
+            android:textSize="20sp"
+            android:textAppearance="@style/labelled"
+            android:lineSpacingExtra="7sp"
+            android:translationY="-3.5sp"
+            android:gravity="top"
+            />
+
+
+
+
+            <EditText
+                android:id="@+id/occupationEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:drawableRight="@null"
+                android:paddingRight="20dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/mainText"
+                android:drawableStart="@drawable/ic_baseline_work_24"
+                android:background="@drawable/phone_edit_shape"
+                android:fontFamily="@font/calibri"
+                android:textAppearance="@style/some_id"
+                android:textAlignment="center"
+                android:editable="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:inputType="text"
+                android:text="Buyer"
+                android:maxLines="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_baseline_work_24"
+                android:gravity="center_horizontal" />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_layout_occupation"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/passwordllabelled"
+            android:layout_width="324dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:text="Password *"
+            android:textColor="#E74C3C"
+            android:textSize="20sp"
+            android:textAppearance="@style/labelled"
+            android:lineSpacingExtra="7sp"
+            android:translationY="-3.5sp"
+            android:gravity="top"
+            />
+
+
+
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:drawableRight="@null"
+                android:paddingRight="20dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/mainText"
+                android:drawableStart="@drawable/ic_outline_lock_24"
+                android:background="@drawable/phone_edit_shape"
+                android:fontFamily="@font/calibri"
+                android:textAppearance="@style/some_id"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_outline_lock_24"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/edit_layout_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_layout_password"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/confirm_Password_llabelled"
+            android:layout_width="324dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:text="Confirm Password *"
+            android:textColor="#E74C3C"
+            android:textSize="20sp"
+            android:textAppearance="@style/labelled"
+            android:lineSpacingExtra="7sp"
+            android:translationY="-3.5sp"
+            android:gravity="top"
+            />
+
+
+
+
+            <EditText
+                android:id="@+id/confirmPasswordEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:drawableRight="@null"
+                android:paddingRight="20dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/mainText"
+                android:drawableStart="@drawable/ic_outline_lock_24"
+                android:background="@drawable/phone_edit_shape"
+                android:fontFamily="@font/calibri"
+                android:textAppearance="@style/some_id"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/ic_outline_lock_24"
+                android:gravity="center_horizontal" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rectangle_submit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edit_layout_confirm_password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rectangle_1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/submit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/calibri"
+            android:text="Submit"
+            android:textAppearance="@style/log_in"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

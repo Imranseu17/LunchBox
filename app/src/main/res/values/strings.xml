@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">LunchBox</string>
+    <string name="log_in">LOG IN</string>
+    <string name="some_id">+88</string>
+    <string name="remeber_text">Remeber me</string>
+    <string name="not_registe">Not registered yet?</string>
+    <string name="forgot_pass"><u>Forgot Password?</u></string>
+    <string name="not_account"><u>Create an Account</u></string>
+    <string name="your_string_here"></string>
+    <string name="enter_your_">Enter your OTP code here</string>
+    <string name="phone_verif">Phone Verification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_ente">Please enter your phone number that you want
+        to verification phone number with otp code for registration</string>
+    <string name="phone_numbe">Phone Number</string>
+    <string name="we_will_sen">We Will Send verification to your Phone Number</string>
+    <string name="didn_t_you_">Didn\'t you received any code?</string>
+    <string name="resent_new_"><u>Resent new code</u></string>
+    <string name="err_msg_email_required">Email field required</string>
+    <string name="err_msg_password">Password field required</string>
+    <string name="err_msg_phone_length">Phone number field is required</string>
+    <string name="err_msg_password_length">Password field must be 6 charters</string>
+    <string name="err_msg_confirm_password_length">Password and confirm password field input must be same</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="success">Success</string>
+    <string name="help">Help</string>
+    <string name="info">Info</string>
+    <string name="err">Error</string>
+    <string name="warning">Warning</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+</resources>
